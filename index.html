@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>week</title>
+<title>Week 3</title>
 </head>
 <body onload="generateFaces()">
 
@@ -58,7 +58,7 @@ function generateFaces() {
 
 	theLeftSide.lastChild.onclick = function nextLevel(event) {
 		event.stopPropagation();
-		numberOfFaces += 1;
+		numberOfFaces += 5;
 		generateFaces();
 	};
 	theBody.onclick = function gameOver() {
