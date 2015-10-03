@@ -38,13 +38,8 @@ var theBody = document.getElementsByTagName("body")[0];
 
 function generateFaces() {
 
-	while (theRightSide.lastChild) {
-		theRightSide.removeChild(theRightSide.lastChild);
-	}
-	while (leftSide.lastChild) {
-		theLeftSide.removeChild(theLeftSide.lastChild);
-	}
-
+	clearField();
+	
 	for (var i=0; i<numberOfFaces; i++) {
 		var smile = document.createElement("img");
 		smile.src='http://home.cse.ust.hk/~rossiter/mooc/matching_game/smile.png';
@@ -66,6 +61,15 @@ function generateFaces() {
     theBody.onclick = null;
     theLeftSide.lastChild.onclick = null;
 	};
+}
+
+function clearField() {
+	while (theRightSide.lastChild) {
+		theRightSide.removeChild(theRightSide.lastChild);
+	}
+	while (leftSide.lastChild) {
+		theLeftSide.removeChild(theLeftSide.lastChild);
+	}
 }
 
 </script>
