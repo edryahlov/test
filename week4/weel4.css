@@ -1,0 +1,44 @@
+xdiv[class^='col-'] {border: dashed 1px;}
+body {
+    font-family: sans-serif;
+    background-color: silver;
+}
+h1 {
+    font-size: 30px;
+    background: #666;
+    color: #fff;
+    padding: 10px;
+}
+p {
+    font-style: italic;
+    color: #000;
+    background: #ccc;
+    padding: 5px;
+    margin-top: 20px;
+}
+p > span {
+    font-weight: bold;
+}
+.pic {
+    position: relative;
+    margin: 0 auto;
+    overflow-x: hidden;
+    /width: 940px;
+}
+.pic {
+    background: url("http://www.gold.ac.uk/media/eco12715.jpg") no-repeat 0 50%;
+    background-size: cover;
+    min-height: 250px;
+}
+.pic > div {
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    bottom: 0;
+}
+button {
+    margin-top: 20px;
+}
